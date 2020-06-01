@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">GIthubIssueRepo</string>
+    <string name="app_name">Github Repo List</string>
+    <string name="open_issue">Open Issue : %s</string>
+    <string name="license">License  :  %s</string>
+    <string name="name">Name  :  %s</string>
+    <string name="description">Description  :  %s</string>
+    <string name="permission">Permission  : </string>
+    <string name="permission_admin">Admin </string>
+    <string name="permission_push">Push </string>
+    <string name="permission_pull">Pull </string>
+    <string name="network_error">Something went wrong</string>
+    <string name="no_repo_exist">No Repository Exist, Please make sure internet is properly connected</string>
 </resources>

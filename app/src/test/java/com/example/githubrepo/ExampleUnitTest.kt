@@ -1,4 +1,4 @@
-package com.example.githubissuerepo
+package com.example.githubrepo
 
 import org.junit.Test
 

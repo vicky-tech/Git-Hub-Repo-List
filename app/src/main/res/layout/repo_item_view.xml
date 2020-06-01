@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.githubrepo.data.remote.model.RepoItem" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    tools:context=".ui.GithubRepoFragment">
+
+
+    <TextView
+        android:id="@+id/tv_open_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{@string/open_issue(item.openIssues)}"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/tv_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{@string/license(item.license.name)}"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_issue"
+        app:layout_constraintStart_toStartOf="@+id/tv_open_issue"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:id="@+id/tv_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        permissionText="@{item.permissions}"
+        app:layout_constraintTop_toBottomOf="@id/tv_license"
+        app:layout_constraintStart_toStartOf="@+id/tv_license"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{@string/name(item.name)}"
+        app:layout_constraintTop_toBottomOf="@id/tv_permission"
+        app:layout_constraintStart_toStartOf="@+id/tv_permission"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{@string/description(item.description)}"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        tools:layout_editor_absoluteY="143dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
