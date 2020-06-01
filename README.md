@@ -18,3 +18,6 @@ This README would normally document whatever steps are necessary to get your app
 * Kotlin Coroutine # for async processing
 * Retrofit # for rest api
 
+### Future Scope###
+* need to add rate limit as it's open api , we can have only limited call to server
+
