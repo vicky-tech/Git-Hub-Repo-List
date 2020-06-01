@@ -4,26 +4,17 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* fetching all the repository from the url https://api.github.com/orgs/
+* show the detail of repository #  open_issues_count, license, permissions, name and description
+* once download user is able to see data offline as well
 
-### How do I get set up? ###
+### Application Arch ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* We have followed MVVM arch. pattern , offline first arch. as we need to show data offline as well
+* followed single Activity Concept with Navigation
+* viewModel # to handle view State , its lifecycle aware so id did not reload data from db on config change
+* databinding # to bind data to view , more readibility, less code
+* use Room ORM for perssistent data
+* Kotlin Coroutine # for async processing
+* Retrofit # for rest api
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
