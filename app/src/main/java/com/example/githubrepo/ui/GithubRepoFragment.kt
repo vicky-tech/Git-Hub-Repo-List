@@ -47,12 +47,12 @@ class GithubRepoFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(GithubRepoViewModel::class.java)
         viewModel.repoList.observe(viewLifecycleOwner, Observer {
            if(!it.isNullOrEmpty()) {
-               binding.noResultsFound.gone()
+              // binding.noResultsFound.gone()
                adapter.updateData(it)
 
-           } else {
+           } /*else {
                binding.noResultsFound.visible()
-           }
+           }*/
         })
         viewModel.status.observe(viewLifecycleOwner, Observer {
             when(it){

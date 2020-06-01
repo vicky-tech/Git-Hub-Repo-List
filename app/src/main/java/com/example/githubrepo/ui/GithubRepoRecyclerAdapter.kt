@@ -26,8 +26,8 @@ class GithubRepoRecyclerAdapter :RecyclerView.Adapter<GithubRepoRecyclerAdapter.
         data?.let {
             val lastIndex = this.data.size
             this.data = data
-            notifyDataSetChanged()
-          //  notifyItemRangeInserted(lastIndex,this.data.size)
+            //notifyDataSetChanged()
+          notifyItemRangeInserted(lastIndex,this.data.size)
         }
     }
 
