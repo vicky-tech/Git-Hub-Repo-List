@@ -1,4 +1,4 @@
-# README #
+# 30 days of learning kotlin  #
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
