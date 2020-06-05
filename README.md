@@ -21,3 +21,12 @@ This README would normally document whatever steps are necessary to get your app
 ### Future Scope###
 * need to add rate limit as it's open api , we can have only limited call to server
 
+### Kotlin Feature ######
+*  Kotlin Coroutine for async task
+*  Extension and scope function for utility and make code more readable
+*  lateinit/ lazy initialization
+*  when for switch case
+* suspend function
+
+
+
